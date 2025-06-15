@@ -1,0 +1,32 @@
+$prefix: 'bb-' !default;
+$enable-negative-margins: true;
+
+// Flag component variables
+$avatar-size: 2rem !default;
+$flag-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) !default;
+$flag-border-radius: 2px !default;
+
+@import 'partials/variable';
+@import 'partials/core';
+@import 'partials/image-picker';
+@import 'partials/flags';
+@import 'partials/notification';
+@import 'partials/dashboard';
+@import 'partials/custom';
+@import 'partials/acl';
+@import 'partials/loading';
+@import 'partials/modal';
+@import 'partials/navbar';
+@import 'partials/setting';
+@import 'partials/widget';
+@import 'partials/dropzone';
+@import 'partials/datetimepicker';
+@import 'partials/rtl';
+@import 'partials/ui-selector';
+@import 'partials/form';
+@import 'partials/global-search';
+@import 'partials/table-mobile-responsive';
+// TODO: Fix Tabler imports
+// @import '@tabler/core/src/scss/vendor/coloris';
+
+@import 'partials/old-style';
