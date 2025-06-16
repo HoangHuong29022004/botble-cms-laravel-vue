@@ -16,6 +16,7 @@ use Botble\Base\GlobalSearch\GlobalSearchableManager;
 use Botble\Base\Models\BaseModel;
 use Botble\Base\PanelSections\Manager as PanelSectionManager;
 use Botble\Base\PanelSections\System\SystemPanelSection;
+use Botble\Base\Providers\HookServiceProvider;
 use Botble\Base\Repositories\Eloquent\MetaBoxRepository;
 use Botble\Base\Repositories\Interfaces\MetaBoxInterface;
 use Botble\Base\Supports\Action;
@@ -51,6 +52,8 @@ class BaseServiceProvider extends ServiceProvider
 
     public function register(): void
     {
+        $this->app->register(HookServiceProvider::class);
+        
         $this
             ->setNamespace('core/base')
             ->loadAndPublishConfigurations('general')
